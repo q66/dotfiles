@@ -1,0 +1,9 @@
+[user]
+	name = q66
+	email = daniel@octaforge.org
+[push]
+	default = matching
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
