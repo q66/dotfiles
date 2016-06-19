@@ -7,3 +7,5 @@
 	ui = true
 [merge]
 	conflictstyle = diff3
+[core]
+	editor = nano
