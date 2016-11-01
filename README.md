@@ -5,7 +5,7 @@ as well) that might be useful for other people.
 
 Currently included:
 
-* mpv (old version, needs updating)
+* mpv (for 0.21 or newer)
 * ncmpc
 * compton
 * git
