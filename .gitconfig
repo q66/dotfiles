@@ -8,4 +8,4 @@
 [merge]
 	conflictstyle = diff3
 [core]
-	editor = nano
+	editor = pico

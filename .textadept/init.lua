@@ -168,7 +168,6 @@ events.connect(events.INITIALIZED, function()
         if updated ~= buffer.UPDATE_CONTENT then
             return
         end
-        local newmod = {}
         for i = 1, #_BUFFERS do
             local buf = _BUFFERS[i]
             -- if any buffer previously modified is no more modfied
@@ -176,9 +175,15 @@ events.connect(events.INITIALIZED, function()
             -- could perhaps just refresh without checking but that could
             -- get expensive
             if buf.modify then
-                if not curmod[buf] then refresh_menu() end
+                if not curmod[buf] then
+                    refresh_menu()
+                    return
+                end
             else
-                if curmod[buf] then refresh_menu() end
+                if curmod[buf] then
+                    refresh_menu()
+                    return
+                end
             end
         end
     end)
