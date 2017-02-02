@@ -6,6 +6,6 @@ for other people.
 
 Currently included:
 
-* mpv (for 0.21 or newer)
-* textadept
-* git
+* mpv (for 0.21 or newer) [good]
+* textadept [wip]
+* git [good]
