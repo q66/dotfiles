@@ -1,5 +1,5 @@
 -- theme and font
-ui.set_theme("base16-twilight-dark", {
+ui.set_theme("light", {
     font = "M+ 1m medium", fontsize = 9
 })
 
