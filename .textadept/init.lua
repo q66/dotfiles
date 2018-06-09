@@ -1,7 +1,8 @@
 -- theme and font
-ui.set_theme("light", {
-    font = "M+ 1m medium", fontsize = 9
+ui.set_theme("base16-twilight-dark", {
+    font = "Pragmata Pro for Powerline", fontsize = 9
 })
+
 
 -- disable tab bar
 ui.tabs = false
@@ -20,15 +21,6 @@ events.connect(events.LEXER_LOADED, function()
         set_bufcfg(_BUFFERS[i])
     end
 end)
-
--- open terminal here on ctrl+shift+T
-keys.cT = function()
-    local path = "~"
-    if buffer.filename then
-        path = buffer.filename:match(".+/")
-    end
-    io.popen("sakura --working-directory=\"" .. path .. "\" &")
-end
 
 -- menubar/context menu bufferlist
 --
